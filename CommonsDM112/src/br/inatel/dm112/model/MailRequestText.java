@@ -10,11 +10,12 @@ public class MailRequestText {
 	public MailRequestText() {
 	}
 
-	public MailRequestText(String from, String password, String to, String text) {
+	public MailRequestText(String from, String password, String to, String subject, String text) {
 		super();
 		this.from = from;
 		this.password = password;
 		this.to = to;
+		this.subject = subject;
 		this.text = text;
 	}
 
