@@ -7,7 +7,7 @@ import java.sql.Statement;
 
 public class SQLiteUtil {
 
-	private static final String DB_FILE_NAME = "/Users/osouza/Documents/Inatel/pagamento.sqlite";
+	private static final String DB_FILE_NAME = "/home/aluno/pagamento.sqlite";
 	
 	public static void main(String[] args) {
 		try {
