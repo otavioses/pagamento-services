@@ -28,5 +28,26 @@ O corpo do request deve possuir um JSON
 <br/>
 }
 <br>
+
+<br/>
+POST: <a href="http://localhost:8080/UtilityDM112/api/sendTextMail/">Envio de email com texto</a>
+<br/>
+O corpo do request deve possuir um JSON
+<br/>
+{
+<br/>
+	"from": "robertorr9@gmail.com",
+<br/>
+	"password": "robertodm112",
+<br/>
+	"to": "otavio.ses@gmail.com",
+<br/>
+	"subject": "Assunto do email",
+<br/>
+	"text": "Texto do email"
+<br/>
+}
+<br>
+
 </body>
 </html>

@@ -18,6 +18,7 @@
         <module>PedidoDM112</module>
         <module>UtilityDM112</module>
         <module>ExemploServletDM112</module>
+        <module>LogisticaDM112</module>
     </modules>
 
     <build>

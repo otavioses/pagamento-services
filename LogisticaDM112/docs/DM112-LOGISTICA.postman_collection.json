@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "34589300-0adf-4bc2-afc3-51f3be2b88e2",
+		"name": "DM112-LOGISTICA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cria Entregador",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"cpf\": \"111.111.111-13\",\n\t\"name\": \"Danilo\",\n\t\"description\" : \"Entegador\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/LogisticaDM112/api/logistica/entregador",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"LogisticaDM112",
+						"api",
+						"logistica",
+						"entregador"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca Entregadores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/LogisticaDM112/api/logistica/entregador",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"LogisticaDM112",
+						"api",
+						"logistica",
+						"entregador"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca Entregador por CPF",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/LogisticaDM112/api/logistica/entregador/111.111.111-11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"LogisticaDM112",
+						"api",
+						"logistica",
+						"entregador",
+						"111.111.111-11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registra Entrega",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"numeroPedido\": \"pedido01\",\n\t\"cpfEntrega\": \"999.999.999-99\",\n\t\"description\": \"successo na entrega\",\n\t\"dataEntrega\": \"2020-01-01T12:12:12.999\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/LogisticaDM112/api/logistica/entrega",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"LogisticaDM112",
+						"api",
+						"logistica",
+						"entrega"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca Entregas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/LogisticaDM112/api/logistica/entrega",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"LogisticaDM112",
+						"api",
+						"logistica",
+						"entrega"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca Entrega por Numero do Pedido",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/LogisticaDM112/api/logistica/entrega/pedido01",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"LogisticaDM112",
+						"api",
+						"logistica",
+						"entrega",
+						"pedido01"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

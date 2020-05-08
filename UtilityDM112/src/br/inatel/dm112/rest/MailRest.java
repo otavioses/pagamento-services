@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.inatel.dm112.interfaces.Email;
 import br.inatel.dm112.model.MailRequestData;
+import br.inatel.dm112.model.MailRequestText;
 import br.inatel.dm112.model.MailStatusResponse;
 import br.inatel.dm112.service.MailService;
 
@@ -24,6 +25,14 @@ public class MailRest implements Email {
 
 		System.out.println("MailRest - sendMail");
 		return service.sendMail(mailData);
+	}
+	
+	@Override
+	@PostMapping(value = "/sendTextMail")
+	public MailStatusResponse sendMail(@RequestBody MailRequestText mailData) {
+
+		System.out.println("MailRest - sendTextMail");
+		return service.sendTextMail(mailData);
 	}
 
 }
