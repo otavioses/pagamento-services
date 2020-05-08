@@ -23,20 +23,20 @@ public class LogisticaConfig {
 	}
 
 	@Bean
-    public EntregadorDAO entregadorDAO() {
-        return new EntregadorDAO();
-    }
+	public EntregadorDAO entregadorDAO() {
+		return new EntregadorDAO();
+	}
 
-    @Bean
-    public EntityManager entityManager() {
-        EntityManagerFactory emFactory = null;
+	@Bean
+	public EntityManager entityManager() {
+		EntityManagerFactory emFactory = null;
 
-        try {
-            emFactory = Persistence.createEntityManagerFactory("logisticaPU");
-        } catch (Throwable e) {
-            throw new ExceptionInInitializerError(e);
-        }
-        
-        return emFactory.createEntityManager();
-    }
+		try {
+			emFactory = Persistence.createEntityManagerFactory("logisticaPU");
+		} catch (Throwable e) {
+			throw new ExceptionInInitializerError(e);
+		}
+
+		return emFactory.createEntityManager();
+	}
 }
