@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import br.inatel.dm112.dao.EntregadorDAO;
-import br.inatel.dm112.model.enities.EntregadorEntity;
+import br.inatel.dm112.model.entities.EntregadorEntity;
 
 @Service
 public class EntregadorService {

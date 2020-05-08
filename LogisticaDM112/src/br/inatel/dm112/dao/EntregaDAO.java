@@ -8,7 +8,7 @@ import javax.persistence.TypedQuery;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import br.inatel.dm112.model.enities.EntregaEntity;
+import br.inatel.dm112.model.entities.EntregaEntity;
 
 @Repository
 public class EntregaDAO {

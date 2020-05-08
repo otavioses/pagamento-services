@@ -1,4 +1,4 @@
-package br.inatel.dm112.model.enities;
+package br.inatel.dm112.model.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

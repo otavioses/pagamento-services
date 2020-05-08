@@ -1,4 +1,4 @@
-package br.inatel.dm112.model.enities;
+package br.inatel.dm112.model.entities;
 
 import java.util.Date;
 

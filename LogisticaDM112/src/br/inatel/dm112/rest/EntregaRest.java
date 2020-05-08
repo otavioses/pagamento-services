@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.inatel.dm112.interfaces.Entrega;
-import br.inatel.dm112.model.enities.EntregaEntity;
+import br.inatel.dm112.model.entities.EntregaEntity;
 import br.inatel.dm112.services.EntregaService;
 
 @RestController
