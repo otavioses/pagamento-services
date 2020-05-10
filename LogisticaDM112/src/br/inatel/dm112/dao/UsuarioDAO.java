@@ -6,10 +6,12 @@ import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import br.inatel.dm112.model.entities.EntregadorEntity;
 import br.inatel.dm112.model.entities.UsuarioEntity;
 
+@Repository
 public class UsuarioDAO {
 	@Autowired
 	private EntityManager entityManager;
@@ -20,18 +22,18 @@ public class UsuarioDAO {
         entityManager.getTransaction().commit();
 	}
 	
-	public UsuarioDAO findByCpf(String cpf) {
-		return entityManager.find(UsuarioDAO.class, cpf);
+	public UsuarioEntity findByCpf(String cpf) {
+		return entityManager.find(UsuarioEntity.class, cpf);
 	}
 
-	public List<EntregadorEntity> findAll() {
-		String ql = "select e from EntregadorEntity e";
+	public List<UsuarioEntity> findAll() {
+		String ql = "select e from UsuarioEntity e";
 		
-		TypedQuery<EntregadorEntity> q = entityManager.createQuery(ql, EntregadorEntity.class);
+		TypedQuery<UsuarioEntity> q = entityManager.createQuery(ql, UsuarioEntity.class);
 
-		List<EntregadorEntity> entregadores = q.getResultList();
+		List<UsuarioEntity> usuarios = q.getResultList();
 		
-		return entregadores;
+		return usuarios;
 	}
 
 }

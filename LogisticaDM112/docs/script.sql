@@ -18,3 +18,5 @@ CREATE TABLE Usuario (
 	email VARCHAR(256) NOT NULL,
     CONSTRAINT Usuario_pk PRIMARY KEY (cpf)
 );
+
+
