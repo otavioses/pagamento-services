@@ -30,28 +30,5 @@ public class PedidoClient {
 		        .log()
 		        .blockFirst();
 	}
-	
-	public static void main(String[] args) {
-		Entregador entregador = new Entregador() {
-			
-			@Override
-			public EntregadorEntity findByCpf(String cpf) {
-				// TODO Auto-generated method stub
-				return null;
-			}
-			
-			@Override
-			public List<EntregadorEntity> findAll() {
-				// TODO Auto-generated method stub
-				return null;
-			}
-			
-			@Override
-			public void create(EntregadorEntity entregadorEntity) {
-				// TODO Auto-generated method stub
-				
-			}
-		};
-	}
 
 }
