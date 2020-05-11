@@ -5,4 +5,4 @@ INSERT INTO Entrega (numeroPedido, cpfEntrega, dataEntrega) VALUES ('1', '333.33
 INSERT INTO Entrega (numeroPedido, cpfEntrega, dataEntrega) VALUES ('2', '444.444.444-44', '2020-01-01 10:10');
 
 INSERT INTO Usuario (cpf, name, email) VALUES ('111.111.111-13', 'Danilo Comprador', 'danilo.carvalho@inatel.br');
-INSERT INTO Usuario (cpf, name, email) VALUES ('111.111.111-14', 'Otávio Comprador', 'otavio.ses@gmail.com');
+INSERT INTO Usuario (cpf, name, email) VALUES ('111.111.111-11', 'Otávio Comprador', 'otavio.ses@gmail.com');

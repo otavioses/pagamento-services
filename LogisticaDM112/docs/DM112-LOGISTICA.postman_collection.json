@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "34589300-0adf-4bc2-afc3-51f3be2b88e2",
+		"_postman_id": "65fac393-c3a7-4884-8bf3-4138db36fc33",
 		"name": "DM112-LOGISTICA",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -88,7 +88,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"numeroPedido\": \"pedido01\",\n\t\"cpfEntrega\": \"999.999.999-99\",\n\t\"description\": \"successo na entrega\",\n\t\"dataEntrega\": \"2020-01-01T12:12:12.999\"\n}",
+					"raw": "{\n\t\"numeroPedido\": \"101\",\n\t\"cpfEntrega\": \"999.999.999-99\",\n\t\"description\": \"successo na entrega\",\n\t\"dataEntrega\": \"2020-01-01T12:12:12.999\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
